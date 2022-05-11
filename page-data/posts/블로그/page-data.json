@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-category-template-js",
     "path": "/posts/블로그",
-    "result": {"pageContext":{"currentCategory":"블로그","categories":["All","블로그"],"edges":[{"node":{"id":"98fbffad-1faf-583a-a325-7370534b3444","excerpt":"블로그 테스트 내용입니다. 위 과정을 따라하시면서 궁금하신 점이 있다면 아래 로 남겨주세요!👇 블로그 테스트 내용입니다.","fields":{"slug":"/gatsby-github-blog/"},"frontmatter":{"categories":"블로그","title":"블로그 테스트 글입니다.","date":"July 06, 2021"}},"next":null,"previous":null}]}},
+    "result": {"pageContext":{"currentCategory":"블로그","categories":["All","블로그"],"edges":[{"node":{"id":"98fbffad-1faf-583a-a325-7370534b3444","excerpt":"나는 기술 블로그를 이것저것 많이 만들어보았다. Tistory, velog 등 많은 기술 블로그들을 경험해보았는데 항상 개발자라면 나만의 블로그가 있으면 좋겠다는 생각이 있었고 그 생각은 시간이 지날수록 더 심해졌다. 그래서 기술 블로그를 만들어보자! 하면서 검색하던 도중, 지금 열심히 공부하고있는 React 툴 기반으로 만들어진 Gastsby를 알게 되었다. Gatsby 템플릿으로 블로그 시작하기 최대한 효율적이고 빠르게 블로그를 만들고 싶었기에 기본적인 템플릿을 활용하기로 했다. 내가 찾아본 템플릿은  와 이다. 어떤 것들을 사용하던지는 상관없다. 당연한 말이지만 본인에게 가장 맞는 템플릿을 사용하면 된다고 생각한다. 아쉽게도 이번 포스팅에서는 어떻게 블로그를 만드는지는 적지 않을 생각이다. 위에 적은 깃허브 주소만 확인해도 충분히 따라 할 수 있을 뿐만 아니라 이미 너무 좋은 블로그 글들이 많기때문이다. Gastby 블로그를 만들면서 느낀 점 원래 개인프로젝트를 하며 배운 점…","fields":{"slug":"/gatsby-github-blog/"},"frontmatter":{"categories":"블로그","title":"나만의 기술 블로그 만들기","date":"May 11, 2022"}},"next":null,"previous":null}]}},
     "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
