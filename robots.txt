@@ -1,3 +1,4 @@
 User-agent: *
-Sitemap: https://s-jooyoung.github.io/sitemap/sitemap-index.xml
+Allow: /
+Sitemap: https://s-jooyoung.github.io/sitemap.xml
 Host: https://s-jooyoung.github.io
