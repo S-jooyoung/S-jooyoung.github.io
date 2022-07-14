@@ -76,19 +76,17 @@
 <li>만약 <code class="language-text">sum</code>값과 원하는 합의 값이 같다면 <code class="language-text">answer</code>를 1증가 시킨다.</li>
 </ul>
 <h3 id="동작방식-" style="position:relative;"><a href="#%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D-" aria-label="동작방식  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>동작방식 🐎</h3>
-<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/0e84ce67-3e17-498f-b561-a204c3b4146c/1.png" alt="">
-<img src="https://velog.velcdn.com/cloudflare/jooyoung/34b2d674-79d5-45ac-ae4e-d5d0c002df15/2.png" alt="">
-<img src="https://velog.velcdn.com/cloudflare/jooyoung/66a9510c-760e-4d44-960f-326ce04c3c1c/3.png" alt="">
-<img src="https://velog.velcdn.com/cloudflare/jooyoung/2289b08f-5bce-4420-bfee-a1772b830006/4.png" alt="">
-<img src="https://velog.velcdn.com/cloudflare/jooyoung/f06a9c33-ad2f-42ac-aa06-0c2bdcbe2bc8/5.png" alt="">
-이런 식으로 <code class="language-text">5</code>보다 작다면 <code class="language-text">rt</code>를 증가시키고 크다면 <code class="language-text">lt</code>를 증가시키면서 값을 구하다 보면 <code class="language-text">5</code>일 때의 값이 나오게 된다. 그럴 때마다 <code class="language-text">answer</code>의 값을 증가시켜주면서 반복문을 끝까지 돌면 된다.</p>
+<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/0e84ce67-3e17-498f-b561-a204c3b4146c/1.png" alt=""></p>
+<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/34b2d674-79d5-45ac-ae4e-d5d0c002df15/2.png" alt=""></p>
+<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/66a9510c-760e-4d44-960f-326ce04c3c1c/3.png" alt=""></p>
+<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/2289b08f-5bce-4420-bfee-a1772b830006/4.png" alt=""></p>
+<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/f06a9c33-ad2f-42ac-aa06-0c2bdcbe2bc8/5.png" alt=""></p>
+<p>이런 식으로 <code class="language-text">5</code>보다 작다면 <code class="language-text">rt</code>를 증가시키고 크다면 <code class="language-text">lt</code>를 증가시키면서 값을 구하다 보면 <code class="language-text">5</code>일 때의 값이 나오게 된다. 그럴 때마다 <code class="language-text">answer</code>의 값을 증가시켜주면서 반복문을 끝까지 돌면 된다.</p>
 <blockquote>
 <p><code class="language-text">투 포인터 알고리즘</code>과 비슷한 <code class="language-text">슬라이딩 윈도우(sliding window)</code>라는 알고리즘도 존재합니다. <code class="language-text">투 포인터</code>와 어떤 차이점이 있는지 밑에서 확인해 보겠습니다.</p>
 </blockquote>
-<hr>
 <h2 id="슬라이딩-윈도우sliding-window란" style="position:relative;"><a href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9-%EC%9C%88%EB%8F%84%EC%9A%B0sliding-window%EB%9E%80" aria-label="슬라이딩 윈도우sliding window란 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>슬라이딩 윈도우(sliding window)란?🤔</h2>
 <p>마치 창문을 한쪽으로 밀면서 문제를 푸는 것과 모양이 유사해서 붙여진 이름이다. 투 포인터처럼 구간을 훑으면서 지나간다는 공통점은 있으나 어느 순간에도 그 구간의 넓이가 동일하다는 차이점이 있다. 구간의 넓이가 주어졌을 때는 슬라이딩 윈도우로 문제를 풀면 되겠다.</p>
-<hr>
 <h2 id="슬라이딩-윈도우sliding-window-예제-" style="position:relative;"><a href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9-%EC%9C%88%EB%8F%84%EC%9A%B0sliding-window-%EC%98%88%EC%A0%9C-" aria-label="슬라이딩 윈도우sliding window 예제  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>슬라이딩 윈도우(sliding window) 예제 📝</h2>
 <blockquote>
 <p>현수의 아빠는 제과점을 운영합니다. 현수 아빠는 현수에게 N일 동안의 매출기록을 주고 연속 된 K일 동안의 최대 매출액이 얼마인지 구하라고 했습니다. 만약 N=10이고 10일 간의 매출기록이 아래와 같습니다. 이때 K=3이면 12 15 11 20 25 10 20 19 13 15 연속된 3일간의 최대 매출액은 11+20+25=56만원입니다. 여러분이 현수를 도와주세요.</p>
@@ -106,8 +104,8 @@
 <li>반복문이 한번 돌 때마다 <code class="language-text">answer</code>값과 현재의 <code class="language-text">res</code>값을 비교하면서 더 큰값을 <code class="language-text">answer</code>에 추가한다.</li>
 </ul>
 <h3 id="최대매출-동작방식-" style="position:relative;"><a href="#%EC%B5%9C%EB%8C%80%EB%A7%A4%EC%B6%9C-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D-" aria-label="최대매출 동작방식  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>최대매출 동작방식 🐎</h3>
-<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/a33e2846-dcaf-44d5-ac02-9456caec1f96/%E1%84%83%E1%85%A1%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%85%E1%85%A9%E1%84%83%E1%85%B3.png" alt="">
-<code class="language-text">위에서 말한 해결 방식</code>처럼 처음 시작은 k 길이만큼 -3,3,1을 <code class="language-text">res</code>에 더해준다. 그런다음 다음으로 넘어갈때는 문이 미끄러지는 거와 같이 오른쪽으로 문이 1칸 가게된다. 그때의 <code class="language-text">res</code>값은 -3을 더해주고 뒤에 값 -3을 빼준다. 이런식으로 쭉 진행한다면 반복문이 한번 다 돌면 값이 나오므로 시간 복잡도는 <code class="language-text">O(n)</code>이 된다.</p>
+<p><img src="https://velog.velcdn.com/cloudflare/jooyoung/a33e2846-dcaf-44d5-ac02-9456caec1f96/%E1%84%83%E1%85%A1%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%85%E1%85%A9%E1%84%83%E1%85%B3.png" alt=""></p>
+<p><code class="language-text">위에서 말한 해결 방식</code>처럼 처음 시작은 k 길이만큼 -3,3,1을 <code class="language-text">res</code>에 더해준다. 그런다음 다음으로 넘어갈때는 문이 미끄러지는 거와 같이 오른쪽으로 문이 1칸 가게된다. 그때의 <code class="language-text">res</code>값은 -3을 더해주고 뒤에 값 -3을 빼준다. 이런식으로 쭉 진행한다면 반복문이 한번 다 돌면 값이 나오므로 시간 복잡도는 <code class="language-text">O(n)</code>이 된다.</p>
 <br/>
 <p><strong>궁금하신 점이 있다면 아래 <code class="language-text">댓글</code>로 남겨주세요!👇</strong></p>
 <div class="table-of-contents">
